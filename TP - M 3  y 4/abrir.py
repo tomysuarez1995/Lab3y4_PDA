@@ -8,8 +8,11 @@ import csv
 #             lista = x
 #             listaUCs2021.append(lista[1])#imprime solamente el nombre de la materia
 #     return listaUCs2021
-alum= input("ingrese nombre de alumno: ")
-escribir= open("personas.csv", "w")
-nuevoalumn= csv.writer(alum)
+alum= ["Algebra"]
+alum2= "S1M1"
+escribir= open("personas.csv", "w", newline="")
+with escribir:
+    nuevoalumn= csv.writer(escribir)
+    nuevoalumn.writerow(alum)
+    nuevoalumn.writerow(alum2)
 
-print(nuevoalumn)
