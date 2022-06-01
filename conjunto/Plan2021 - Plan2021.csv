@@ -1,0 +1,60 @@
+Codigo,UC,Previa 1,Previa 2,Previa 3,Previa 4,Previa 5,Créditos
+S1UC1,Salud y sociedad,,,,,,8
+S1UC2,Álgebra análisis y geometría analítica,,,,,,8
+S1UC3,Mecánica ondas y calor,,,,,,10
+S1UC4,Química general e inorgánica,,,,,,9
+S1UC5,Taller inicial de tecnologías,,,,,,-
+S1UC6,Inglés 1,,,,,,4
+S2UC7,Anatomía y fisiología humanas,Salud y sociedad,Mecánica ondas y calor,,,,10
+S2UC8,Números complejos y ecuaciones diferenciales,Álgebra análisis y geometría analítica,,,,,8
+S2UC9,Electricidad y magnetismo,Álgebra análisis y geometría analítica,Mecánica ondas y calor,,,,10
+S2UC10,Química orgánica y biológica,Química general e inorgánica,,,,,9
+S2UC11,Taller inicial de tecnologías,,,,,,8
+S2UC12,Inglés 2,Inglés 1,,,,,4
+S3UC13,Instalaciones hospitalarias,Química general e inorgánica,Anatomía y fisiología humanas,,,,9
+S3UC14,Electrónica analógica,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,,,,10
+S3UC15,Óptica y radiaciones,Física eléctrica,Números complejos y ecuaciones diferenciales,,,,10
+S3UC16,Electrotecnia,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,,,,9
+S3UC17,Programación de computadoras,Álgebra análisis y geometría analítica,,,,,8
+S3UC18,Inglés 3,Inglés 2,,,,,4
+S4UC19,Imágenes médicas,Anatomía y fisiología humana,Óptica y radiaciones,Electrónica analógica,,,10
+S4UC20,Electrónica digital,Electrónica Analógica,,,,,10
+S4UC21,Electrofisiología clínica,Anatomía y fisiología humana,Electrónica analógica,,,,10
+S4UC22,Mecánica máquinas y materiales,Electrotecnia,,,,,9
+S4UC23,Práctica profesional curricular A,Anatomía y fisiología humanas,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,Taller inicial de tecnologías,Química orgánica y biológica,-
+S4UC24,Inglés 4,Inglés 3,,,,,4
+S5UC25,Seguridad eléctrica y radiante,Instalaciones hospitalarias,Imágenes médicas,Electrofisiología clínica,,,10
+S5UC26,Normativa sobre equipamiento médico,Instalaciones hospitalarias,Imágenes médicas,Electrofisiología clínica,,,8
+S5UC27,Taller de mantenimiento de equipos médicos,Instalaciones hospitalarias,Mecánica máquinas y materiales,Imágenes médicas,Electrofisiología clínica,,10
+S5UC28,Práctica profesional curricular A,Anatomía y fisiología humanas,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,Taller inicial de tecnologías,Química orgánica y biológica,12
+S5UC29,Matemática avanzada I,Números complejos y ecuaciones diferenciales,Programación de computadoras,,,,9
+S5UC30,Inglés 5,Inglés 4,,,,,4
+S6UC31,Instrumental de laboratorio clínico,Química orgánica y biológica,Instalaciones hospitalarias,,,,9
+S6UC32,Informática médica,Programación de computadoras,Normativa sobre equipamiento médico,,,,6
+S6UC33,Instrumentación médica complementaria,Electrotecnia,Instalaciones hospitalarias,Electrofisiología clínica,Imágenes médicas,,11
+S6UC34,Proyecto final de titulación,Para presentar la propuesta de PFT: estar cursando una unidad curricular del 3er Semestre Para presentar la defensa del PFT: haber aprobado todas las demás unidades curriculares del Plan de Estudio,,,,,25
+S6UC35,Inglés 6,Inglés 5,,,,,4
+S7UC36,Fisiopatología,Instrumental de laboratorio clínico / Instrumentación médica complementaria,,,,,9
+S7UC37,Radiaciones no ionizantes,Matemática avanzada I / Física avanzada,,,,,7
+S7UC38,Programación digital avanzada,Informática médica / Matemática avanzada I,,,,,7
+S7UC39,Legislación para la salud,Normativa sobre equipamiento médico,Instrumental de laboratorio clínico,Informática médica,Instrumentación médica complementaria,,5
+S7UC40,Economía para la salud,Taller de mantenimiento de equipos médicos,Instrumental de laboratorio clínico,Informática médica,Instrumentación médica complementaria,,5
+S7UC41,Inglés 7,Inglés 6,,,,,4
+S8UC42,Bioestadística,Informática médica,,,,,7
+S8UC43,Señales y sistemas,Electrofisiología clínica,Electrónica digital,Matemática avanzada II,,,8
+S8UC44,Biomecánica y biomateriales,Anatomía y fisiología humanas,Mecánica máquinas y materiales,,,,7
+S8UC45,Metodología de la investigación,Física avanzada,Fisiopatología,,,,5
+S8UC46,Higiene y seguridad en ambientes hospitalarios,Fisiopatología,Legislación para la salud,,,,5
+S8UC47,Inglés 8,Inglés 7,,,,,4
+S9UC48,Radioterapia,Seguridad eléctrica y radiante,Física avanzada,Fisiopatología,,,7
+S9UC49,Gestión de sistemas de salud,Fisiopatología,Legislación para la salud,Economía para la salud,Bioestadística,,9
+S9UC50,Investigación clínica y bioética,Metodología de la investigación,Higiene y seguridad en ambientes hospitalarios,Bioestadística,,,5
+S9UC51,Electiva 1,Ver la previatura que corresponde a la electiva,,,,,4
+S9UC52,Electiva 2,Ver la previatura que corresponde a la electiva,,,,,4
+S9UC53,Práctica profesional curricular B,"Para matricularse: Haber aprobado las cursadas de todas las UCs hasta el octavo semestre inclusive, excluyendo inglés y haber aprobado una de las siguientes UCs: Radioterapia, Gestión de sistemas de salud, Investigación clínica y bioética",,,,,6
+S9UC54,Inglés 9,Inglés 8,,,,,4
+S10UC55,Telesalud y telemedicina,Gestión de sistemas de salud,,,,,
+S10UC56,Electiva 3,Ver la previatura que corresponde a la electiva,,,,,
+S10UC57,Electiva 4,Ver la previatura que corresponde a la electiva,,,,,
+S10UC58,Proyecto final de titulación a nivel ingeniería,"Para presentar la propuesta del PFT I se requiere: Haber aprobado PFT T. Para presentar la defensa: Haber aprobado todas las UCs del primero al noveno semestre, excluyendo inglés. Haber aprobado la UC Telemedicina, y los 15 créditos de UCs Electivas. Para probar el PFT I: se rige el Reglamento de Trabajos de Titulación.",,,,,25
+S10UC59,Inglés 10,Inglés 9,,,,,4

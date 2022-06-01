@@ -1,0 +1,36 @@
+Codigo,UC,Previa 1,Previa 2,Previa 3,Previa 4,Previa 5,Créditos
+S1UC1,Salud y sociedad,,,,,,8
+S1UC2,Álgebra análisis y geometría analítica,,,,,,8
+S1UC3,Mecánica ondas y calor,,,,,,10
+S1UC4,Química general e inorgánica,,,,,,9
+S1UC5,Taller inicial de tecnologías,,,,,,-
+S1UC6,Inglés 1,,,,,,4
+S2UC1,Anatomía y fisiología humanas,Salud y sociedad,Mecánica ondas y calor,,,,10
+S2UC2,Números complejos y ecuaciones diferenciales,Álgebra análisis y geometría analítica,,,,,8
+S2UC3,Electricidad y magnetismo,Álgebra análisis y geometría analítica,Mecánica ondas y calor,,,,10
+S2UC4,Química orgánica y biológica,Química general e inorgánica,,,,,9
+S2UC5,Taller inicial de tecnologías,,,,,,8
+S2UC6,Inglés 2,Inglés 1,,,,,4
+S3UC1,Instalaciones hospitalarias,Química general e inorgánica,Anatomía y fisiología humanas,,,,9
+S3UC2,Electrónica analógica,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,,,,10
+S3UC3,Óptica y radiaciones,Física eléctrica,Números complejos y ecuaciones diferenciales,,,,10
+S3UC4,Electrotecnia,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,,,,9
+S3UC5,Programación de computadoras,Álgebra análisis y geometría analítica,,,,,8
+S3UC6,Inglés 3,Inglés 2,,,,,4
+S4UC1,Imágenes médicas,Anatomía y fisiología humana,Óptica y radiaciones,Electrónica analógica,,,10
+S4UC2,Electrónica digital,Electrónica Analógica,,,,,10
+S4UC3,Electrofisiología clínica,Anatomía y fisiología humana,Electrónica analógica,,,,10
+S4UC4,Mecánica máquinas y materiales,Electrotecnia,,,,,9
+S4UC5,Práctica profesional curricular A,Anatomía y fisiología humanas,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,Taller inicial de tecnologías,Química orgánica y biológica,-
+S4UC6,Inglés 4,Inglés 3,,,,,4
+S5UC1,Seguridad eléctrica y radiante,Instalaciones hospitalarias,Imágenes médicas,Electrofisiología clínica,,,10
+S5UC2,Normativa sobre equipamiento médico,Instalaciones hospitalarias,Imágenes médicas,Electrofisiología clínica,,,8
+S5UC3,Taller de mantenimiento de equipos médicos,Instalaciones hospitalarias,Mecánica máquinas y materiales,Imágenes médicas,Electrofisiología clínica,,10
+S5UC4,Práctica profesional curricular A,Anatomía y fisiología humanas,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,Taller inicial de tecnologías,Química orgánica y biológica,12
+S5UC5,Matemática avanzada I,Números complejos y ecuaciones diferenciales,Programación de computadoras,,,,9
+S5UC6,Inglés 5,Inglés 4,,,,,4
+S6UC1,Instrumental de laboratorio clínico,Química orgánica y biológica,Instalaciones hospitalarias,,,,9
+S6UC2,Informática médica,Programación de computadoras,Normativa sobre equipamiento médico,,,,6
+S6UC3,Instrumentación médica complementaria,Electrotecnia,Instalaciones hospitalarias,Electrofisiología clínica,Imágenes médicas,,11
+S6UC4,Proyecto final de titulación,Para presentar la propuesta de PFT: estar cursando una unidad curricular del 3er Semestre Para presentar la defensa del PFT: haber aprobado todas las demás unidades curriculares del Plan de Estudio,,,,,25
+S6UC5,Inglés 6,Inglés 5,,,,,4
