@@ -1,7 +1,6 @@
 """Adaptar el codigo a .csv"""
 import csv
 import pandas as pd
-from sqlalchemy import column
 class Ingreso():
     """En esta clase se asigna el rol y se agregan a la base de datos a los estudiantes, docentes, coordinadores
     y administrativa"""
