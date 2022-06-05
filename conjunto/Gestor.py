@@ -17,24 +17,24 @@ class Coordinador():
         
 
 class Estudiante():
-    def __init__(self, cedula,matricEX=None, matricUC=None):
+    def __init__(self,cedula,matricEX=None, matricUC=None):
         self.matricUC= matricUC
         self.matricEx= matricEX
         self.ci= cedula
        
     def matricularEx(self):
-        with open(f"examenes/disponibles/{nuevoss}.csv",'a', newline='') as File:
+        with open(f"examenes/disponibles/{self.matricEx}.csv",'a', newline='') as File:
             leer1= csv.writer(File)
             with open(f'rol.csv', 'r', newline='') as nuevo:
                 leer= csv.DictReader(nuevo)
                 for i in leer:
                     for key, value in i.items():
-                        if value == "54311063":
+                        if value == str(self.ci):
                             estudiante= [i["Nombres"],i["CI"]]
-            leer1.writerow(estudiante)
+                            leer1.writerow(estudiante)
             nuevo.close()
         File.close()
-        return estudiante
+        return "estudiante matriculado"
 
         
     def matricularUC(self):
@@ -64,5 +64,3 @@ class Administrador():
         return pd.read_csv(f"examenes/disponibles/{self.ex}.csv ")
 
 
-matricular=Estudiante(54311063,"S6UC2")
-print(matricular.matricularEx())
