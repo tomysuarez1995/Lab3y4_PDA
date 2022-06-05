@@ -62,29 +62,29 @@ class Estudiante():
                         return 2
     def matricularEx(self):
         with open(f"examenes/disponibles/{self.matricEx}.csv",'a', newline='') as File:
-            leer= csv.DictReader(File)
-            for row in leer:
-                for keys, values in row.items():
-                    if values == str(self.ci) in values:
-                        with open('rol.csv', 'a', newline='') as nuevo:
-                        dato= [self.nomb,self.ci,"Administrativa/o",self.ingreso,self.asignar_mail()]
-                        df= csv.writer(nuevo)
-                        df.writerow(dato)
-                        nuevo.close()
-                        return "Administrativa/o guardado"
-
-
-        pass
+            leer1= csv.writer(File)
+            with open(f'rol.csv', 'r', newline='') as nuevo:
+                leer= csv.DictReader(nuevo)
+                for i in leer:
+                    for key, value in i.items():
+                        if value == "54311063":
+                            estudiante= [i["Nombres"],i["CI"]]
+                            leer1.writerow(estudiante)
+                            return f"estudiante {estudiante[0]} matriculado"
+                nuevo.close()
+            File.close()
+        
     def matricularUC(self):
         pass
 
 class Administrador():
-    def __init__(self, cedula,matricUC=None, matricEX=None, DesmUC=None, DesmEX=None, nombreuc=None,nombreEx=None ):
+    def __init__(self, cedula,nombrEst=None,matricUC=None, matricEX=None, DesmUC=None, DesmEX=None, nombreuc=None,nombreEx=None ):
         if self.existencia(self, cedula)==1:
             self.matricUC= matricUC
             self.matricEx= matricEX
             self.uc= nombreuc
             self.ex= nombreEx
+            self.est= nombrEst
             print("Bienvenido")
         elif self.existencia(self, cedula)==2:
             raise ValueError("Usted no existe en la base de datos")
