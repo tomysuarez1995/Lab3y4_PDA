@@ -1,6 +1,7 @@
 """Adaptar el codigo a .csv"""
 import csv
 import pandas as pd
+
 class Ingreso():
     """En esta clase se asigna el rol y se agregan a la base de datos a los estudiantes, docentes, coordinadores
     y administrativa"""

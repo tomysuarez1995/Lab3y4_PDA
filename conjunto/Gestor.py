@@ -13,7 +13,7 @@ class Coordinador():
         self.nombreEx= nombreEx
 
     def leer_uc(self):
-        return pd.read_csv(f"matricladas/disponibles/{self.nombreuc}.csv ") 
+        return pd.read_csv(f"matriculadas/disponibles/{self.nombreuc}.csv ") 
         
     def leer_Ex(self):
         return pd.read_csv(f"examenes/disponibles/{self.nombreEx}.csv ")
@@ -21,16 +21,15 @@ class Coordinador():
 
 class Estudiante():
     """Clase estudiante donde se puede matricular a los examenes y Uc determinado sus materias"""
-    def __init__(self,cedula,matricEX=None, matricUC=None, UCsAprobadas = []):
-        self.matricUC = matricUC
-        self.matricEx = matricEX
+    def __init__(self,cedula,matricula=None, UCsAprobadas = []):
+        self.matricula = matricula
         self.ci = cedula
         self.UCsAprobadas = UCsAprobadas
 
        
     def matricularEx(self):
         """Esta funcion matricula a examen al estudiante"""
-        with open(f"examenes/disponibles/{self.matricEx}.csv",'a', newline='') as File:
+        with open(f"examenes/disponibles/{self.matricula}.csv",'a', newline='') as File:
             leer1= csv.writer(File)
             with open(f'rol.csv', 'r', newline='') as nuevo:
                 leer= csv.DictReader(nuevo)
@@ -68,9 +67,10 @@ class Estudiante():
                 lista = x
                 if lista[2] in self.UCsAprobadas and lista[3]  in self.UCsAprobadas and lista[4]  in self.UCsAprobadas and lista[5]  in self.UCsAprobadas and lista[6] in self.UCsAprobadas:
                     UCsmatric.append(lista[0])
-                    UCsmatriculables = [j for j in UCsmatric if j not in self.UCsAprobadas]  
-        if self.matricUC in UCsmatriculables:
-            with open(f"matricladas/disponibles/{self.matricUC}.csv",'a', newline='') as File:
+                    UCsmatriculables = [j for j in UCsmatric if j not in self.UCsAprobadas]
+
+        if self.matricula in UCsmatriculables:
+            with open(f"matriculadas/disponibles/{self.matricula}.csv",'a', newline='') as File:
                 leer1= csv.writer(File)
                 with open(f'rol.csv', 'r', newline='') as nuevo:
                     leer= csv.DictReader(nuevo)
@@ -82,14 +82,13 @@ class Estudiante():
                 nuevo.close()
             File.close()
             return "estudiante matriculado"
-        elif self.matricUC not in UCsmatriculables:
+        elif self.matricula not in UCsmatriculables:
             return "No te puedes matricular a esa asignatura"
 
 class Administrador():
     """El admin puede matricular, desmatricular y leer las Uc y Examenes"""
-    def __init__(self,ciest=None,matricUC=None, matricEX=None, nombreuc=None,nombreEx=None, UCsAprobadas = [] ):
-        self.matricUC= matricUC
-        self.matricEx= matricEX
+    def __init__(self,ciest=None,matricula=None, nombreuc=None,nombreEx=None, UCsAprobadas = [] ):
+        self.matricula= matricula
         self.uc= nombreuc
         self.ex= nombreEx
         self.est= ciest
@@ -100,7 +99,7 @@ class Administrador():
         el de copia de seguridad para luego blanquear el de copia de seguridad"""
         with open("examenes/disponibles/copiaseguridad.csv", "a") as y:
             data2=csv.writer(y)
-            with open(f"examenes/disponibles/{self.matricEx}.csv", "r") as f:
+            with open(f"examenes/disponibles/{self.matricula}.csv", "r") as f:
                 data = list(csv.reader(f))
                 print(data)
                 for i in data:
@@ -113,10 +112,10 @@ class Administrador():
                             data2.writerow(lista)
             f.close()
         y.close()
-        with open(f"examenes/disponibles/{self.matricEx}.csv", "w") as t:
+        with open(f"examenes/disponibles/{self.matricula}.csv", "w") as t:
                 data3=csv.writer(t)
                 t.close()
-        with open(f"examenes/disponibles/{self.matricEx}.csv",'a', newline='') as File:
+        with open(f"examenes/disponibles/{self.matricula}.csv",'a', newline='') as File:
             leer1= csv.writer(File)
             with open('examenes/disponibles/copiaseguridad.csv', 'r', newline='') as nuevo:
                 leer= list(csv.reader(nuevo))
@@ -135,7 +134,7 @@ class Administrador():
         el de copia de seguridad para luego blanquear el de copia de seguridad"""
         with open("examenes/disponibles/copiaseguridad.csv", "a") as y:
             data2=csv.writer(y)
-            with open(f"examenes/disponibles/{self.matricUC}.csv", "r") as f:
+            with open(f"matriculadas/disponibles/{self.matricula}.csv", "r") as f:
                 data = list(csv.reader(f))
                 for i in data:
                     list1= i[0]
@@ -147,25 +146,25 @@ class Administrador():
                             data2.writerow(lista)
             f.close()
         y.close()
-        with open(f"examenes/disponibles/{self.matricUC}.csv", "w") as t:
+        with open(f"matriculadas/disponibles/{self.matricula}.csv", "w") as t:
                 data3=csv.writer(t)
                 t.close()
-        with open(f"examenes/disponibles/{self.matricUC}.csv",'a', newline='') as File:
+        with open(f"matriculadas/disponibles/{self.matricula}.csv",'a', newline='') as File:
             leer1= csv.writer(File)
-            with open('examenes/disponibles/copiaseguridad.csv', 'r', newline='') as nuevo:
+            with open('matriculadas/disponibles/copiaseguridad.csv', 'r', newline='') as nuevo:
                 leer= list(csv.reader(nuevo))
                 for i in leer:
                     leer1.writerow(i)
             nuevo.close()
         File.close()
-        with open("examenes/disponibles/copiaseguridad.csv", "w") as y:
+        with open("matriculadas/disponibles/copiaseguridad.csv", "w") as y:
             data2=csv.writer(y)
             y.close()
         return "Estudiante desmatriculado"
 
     def leer_uc(self):
         """devuelve los estudiantes matriculados a la UC ingresada"""
-        return pd.read_csv(f"matricladas/disponibles/{self.uc}.csv ") 
+        return pd.read_csv(f"matriculadas/disponibles/{self.uc}.csv ") 
         
     def leer_Ex(self):
         """devuelve los estudiantes matriculados al examen ingresado"""
@@ -173,7 +172,7 @@ class Administrador():
 
     def matricularEx(self):
         """Esta funcion matricula a examen al estudiante"""
-        with open(f"examenes/disponibles/{self.matricEx}.csv",'a', newline='') as File:
+        with open(f"examenes/disponibles/{self.matricula}.csv",'a', newline='') as File:
             leer1= csv.writer(File)
             with open(f'rol.csv', 'r', newline='') as nuevo:
                 leer= csv.DictReader(nuevo)
@@ -188,7 +187,7 @@ class Administrador():
 
     def matricularUC(self):
         """Esta funcion matricula a UC al estudiante"""
-        with open(f"matricladas/disponibles/{self.matricEx}.csv",'a', newline='') as File:
+        with open(f"matriculadas/disponibles/{self.matricula}.csv",'a', newline='') as File:
             leer1= csv.writer(File)
             with open(f'rol.csv', 'r', newline='') as nuevo:
                 leer= csv.DictReader(nuevo)
