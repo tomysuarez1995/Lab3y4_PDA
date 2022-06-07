@@ -1,2 +1,0 @@
-
-{'UC': 'Matematicas 1', 'creditos': 8, 'codigo': 'mat1'}
