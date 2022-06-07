@@ -21,6 +21,7 @@ class Ingreso():
             raise ValueError("el rol debe de ser E(Estudiante), A(Administrativa), C(Coordinadora)")
         
     def asignar_mail(self):
+        """Simplemente esta funcion le agrega la extencion al mail segun si es estudiante o no"""
         if self.tipo=="E" or self.tipo=="e":
             correo = self.nomb.replace(" ", ".")
             return f"{correo.lower()}@estudiantes.utec.edu.uy"
@@ -33,6 +34,9 @@ class Ingreso():
         return f"{self.nomb} con cedula {self.ci} tiene los datos: \nrol: {self.tipo} \ncorreo: {self.asignar_mail()}"
 
     def guardar_datos(self):
+        """Esta funcion guarda los datos de los ingresados en el archivo designado, simplemente guarda todos los
+        ingresados en un archivo, puede ser en archivos distintos pero no cambia tanto el codigo ni aqui ni a 
+        futuro"""
         with open('rol.csv', 'a', newline='') as nuevo:
             if self.tipo == "A" or self.tipo=="a":
                 dato= [self.nomb,self.ci,"Administrativa/o",self.ingreso,self.asignar_mail()]
@@ -56,4 +60,5 @@ class Ingreso():
                 return "Estudiante Guardado"
 
     def mostrar_archivo(self):
+        """muestra mediante tabla los ingresados"""
         return pd.read_csv("rol.csv")
