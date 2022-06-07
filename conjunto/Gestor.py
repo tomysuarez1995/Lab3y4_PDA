@@ -43,7 +43,7 @@ class Estudiante():
         return "estudiante matriculado"
 
     def consultaMatriculables(self):
-        """devuelve una lista según las UCs a las que te podes matricular con las previas que tenes"""
+        """devuelve una lista según las UCs a las que te podes matricular considerando las previas que tenes"""
         self.UCsAprobadas.append("")
         UCsmatric = []
         with open("Plan2021.csv", 'r', encoding="utf-8") as csvPlan2021:
@@ -57,7 +57,9 @@ class Estudiante():
         return UCsmatriculables
 
     def matricularUC(self):
-
+        """Toma la UC a la que se desea matricular el estudiante y considera si puede o no hacerlo según las previas,
+        Si el estudiante puede matricularse, lo matricula,
+        Si el estudiante no puede matricularse porque no tiene aprobadas las previas necesarias, imprime "No te puedes matricular a esa asignatura" """
         self.UCsAprobadas.append("")
         UCsmatric = []
         with open("Plan2021.csv", 'r', encoding="utf-8") as csvPlan2021:
