@@ -15,13 +15,18 @@ with open('Plan2021.csv', 'r', encoding="utf-8") as csvPlan2021:
     plan2021 = csv.reader(csvPlan2021)
 
     listaPlan2021 = list(plan2021)
-    
+    print("123")
+    print(listaPlan2021)
+    print("123")
 #print (listaPlan2021)
 
 listaUCs2021 = []
 for x in listaPlan2021:
     lista = x
     listaUCs2021.append(lista[1])
+print("listaUCs2021")
+print(listaUCs2021)
+print("listaUCs2021")
 
 class Secretaria(Persona):
     '''Clase Secretaria. Hereda atributos de la clase Persona y ademas tiene otros atributos y metodos de acuerdo a la responsabilidad del cargo.'''
@@ -91,9 +96,6 @@ class Estudiante():
   
     def autoMatricula(self, consultaMatriculables,listaMatricular):
         hola = consultaMatriculables()
-
-hola = [ingles1, ingles2]
-estudiante1.automatricula()
 
 
         

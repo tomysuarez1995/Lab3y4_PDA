@@ -18,7 +18,7 @@ class Ingreso():
             else:
                 print("Coordinador/a Ingresado")
         else:
-            raise ValueError("el rol debe de ser E(Estudiante), A(Administrativa), C(Coordinadora)")
+            raise ValueError("el rol debe de ser E(Estudiante), A(Administrativa), C(Coordinador)")
         
     def asignar_mail(self):
         """Simplemente esta funcion le agrega la extencion al mail segun si es estudiante o no"""

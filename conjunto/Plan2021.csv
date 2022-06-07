@@ -5,32 +5,56 @@ S1UC3,Mecánica ondas y calor,,,,,,10
 S1UC4,Química general e inorgánica,,,,,,9
 S1UC5,Taller inicial de tecnologías,,,,,,-
 S1UC6,Inglés 1,,,,,,4
-S2UC1,Anatomía y fisiología humanas,Salud y sociedad,Mecánica ondas y calor,,,,10
-S2UC2,Números complejos y ecuaciones diferenciales,Álgebra análisis y geometría analítica,,,,,8
-S2UC3,Electricidad y magnetismo,Álgebra análisis y geometría analítica,Mecánica ondas y calor,,,,10
-S2UC4,Química orgánica y biológica,Química general e inorgánica,,,,,9
+S2UC1,Anatomía y fisiología humanas,S1UC1,S1UC3,,,,10
+S2UC2,Números complejos y ecuaciones diferenciales,S1UC2,,,,,8
+S2UC3,Electricidad y magnetismo,S1UC2,S1UC3,,,,10
+S2UC4,Química orgánica y biológica,S1UC4,,,,,9
 S2UC5,Taller inicial de tecnologías,,,,,,8
-S2UC6,Inglés 2,Inglés 1,,,,,4
-S3UC1,Instalaciones hospitalarias,Química general e inorgánica,Anatomía y fisiología humanas,,,,9
-S3UC2,Electrónica analógica,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,,,,10
-S3UC3,Óptica y radiaciones,Física eléctrica,Números complejos y ecuaciones diferenciales,,,,10
-S3UC4,Electrotecnia,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,,,,9
-S3UC5,Programación de computadoras,Álgebra análisis y geometría analítica,,,,,8
-S3UC6,Inglés 3,Inglés 2,,,,,4
-S4UC1,Imágenes médicas,Anatomía y fisiología humana,Óptica y radiaciones,Electrónica analógica,,,10
-S4UC2,Electrónica digital,Electrónica Analógica,,,,,10
-S4UC3,Electrofisiología clínica,Anatomía y fisiología humana,Electrónica analógica,,,,10
-S4UC4,Mecánica máquinas y materiales,Electrotecnia,,,,,9
-S4UC5,Práctica profesional curricular A,Anatomía y fisiología humanas,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,Taller inicial de tecnologías,Química orgánica y biológica,-
-S4UC6,Inglés 4,Inglés 3,,,,,4
-S5UC1,Seguridad eléctrica y radiante,Instalaciones hospitalarias,Imágenes médicas,Electrofisiología clínica,,,10
-S5UC2,Normativa sobre equipamiento médico,Instalaciones hospitalarias,Imágenes médicas,Electrofisiología clínica,,,8
-S5UC3,Taller de mantenimiento de equipos médicos,Instalaciones hospitalarias,Mecánica máquinas y materiales,Imágenes médicas,Electrofisiología clínica,,10
-S5UC4,Práctica profesional curricular A,Anatomía y fisiología humanas,Números complejos y ecuaciones diferenciales,Electricidad y magnetismo,Taller inicial de tecnologías,Química orgánica y biológica,12
-S5UC5,Matemática avanzada I,Números complejos y ecuaciones diferenciales,Programación de computadoras,,,,9
-S5UC6,Inglés 5,Inglés 4,,,,,4
-S6UC1,Instrumental de laboratorio clínico,Química orgánica y biológica,Instalaciones hospitalarias,,,,9
-S6UC2,Informática médica,Programación de computadoras,Normativa sobre equipamiento médico,,,,6
-S6UC3,Instrumentación médica complementaria,Electrotecnia,Instalaciones hospitalarias,Electrofisiología clínica,Imágenes médicas,,11
+S2UC6,Inglés 2,S1UC6,,,,,4
+S3UC1,Instalaciones hospitalarias,S1UC4,S2UC1,,,,9
+S3UC2,Electrónica analógica,S2UC2,S2UC3,,,,10
+S3UC3,Óptica y radiaciones,S2UC3,S2UC2,,,,10
+S3UC4,Electrotecnia,S2UC2,S2UC3,,,,9
+S3UC5,Programación de computadoras,S1UC2,,,,,8
+S3UC6,Inglés 3,S2UC6,,,,,4
+S4UC1,Imágenes médicas,S2UC1,S3UC3,S3UC2,,,10
+S4UC2,Electrónica digital,S3UC2,,,,,10
+S4UC3,Electrofisiología clínica,S2UC1,S3UC2,,,,10
+S4UC4,Mecánica máquinas y materiales,S3UC4,,,,,9
+S4UC5,Práctica profesional curricular A,S2UC1,S2UC2,S2UC3,S1UC5,S2UC4,-
+S4UC6,Inglés 4,S3UC6,,,,,4
+S5UC1,Seguridad eléctrica y radiante,S3UC1,S4UC1,S4UC3,,,10
+S5UC2,Normativa sobre equipamiento médico,S3UC1,S4UC1,S4UC3,,,8
+S5UC3,Taller de mantenimiento de equipos médicos,S3UC1,S4UC4,S4UC1,S4UC3,,10
+S5UC4,Práctica profesional curricular A,S2UC1,S2UC2,S2UC3,S1UC5,S2UC4,12
+S5UC5,Matemática avanzada I,S2UC2,S3UC5,,,,9
+S5UC6,Inglés 5,S4UC6,,,,,4
+S6UC1,Instrumental de laboratorio clínico,S2UC4,S3UC1,,,,9
+S6UC2,Informática médica,S3UC5,S5UC2,,,,6
+S6UC3,Instrumentación médica complementaria,S3UC4,S3UC1,S4UC3,S4UC1,,11
 S6UC4,Proyecto final de titulación,Para presentar la propuesta de PFT: estar cursando una unidad curricular del 3er Semestre Para presentar la defensa del PFT: haber aprobado todas las demás unidades curriculares del Plan de Estudio,,,,,25
 S6UC5,Inglés 6,Inglés 5,,,,,4
+S7UC36,Fisiopatología,S6UC1,S6UC3,,,,9
+S7UC37,Radiaciones no ionizantes,S5UC5,,,,,7
+S7UC38,Programación digital avanzada,S6UC2,S5UC5,S3UC5,,,7
+S7UC39,Legislación para la salud,S5UC2,S6UC1,S6UC2,S6UC3,,5
+S7UC40,Economía para la salud,S5UC3,S6UC1,S6UC2,S6UC3,,5
+S7UC41,Inglés 7,S6UC5,,,,,4
+S8UC42,Bioestadística,S6UC2,,,,,7
+S8UC43,Señales y sistemas,S4UC3,S4UC2,,,,8
+S8UC44,Biomecánica y biomateriales,S2UC1,S4UC4,,,,7
+S8UC45,Metodología de la investigación,S7UC36,,,,,5
+S8UC46,Higiene y seguridad en ambientes hospitalarios,S7UC36,S7UC39,,,,5
+S8UC47,Inglés 8,S7UC41,,,,,4
+S9UC48,Radioterapia,S5UC1,S7UC36,,,,7
+S9UC49,Gestión de sistemas de salud,S7UC36,S7UC39,S7UC40,S8UC42,,9
+S9UC50,Investigación clínica y bioética,S8UC45,S8UC46,S8UC42,,,5
+S9UC51,Electiva 1,Ver la previatura que corresponde a la electiva,,,,,4
+S9UC52,Electiva 2,Ver la previatura que corresponde a la electiva,,,,,4
+S9UC53,Práctica profesional curricular B,"Para matricularse: Haber aprobado las cursadas de todas las UCs hasta el octavo semestre inclusive, excluyendo inglés y haber aprobado una de las siguientes UCs: Radioterapia, Gestión de sistemas de salud, Investigación clínica y bioética",,,,,6
+S9UC54,Inglés 9,S8UC47,,,,,4
+S10UC55,Telesalud y telemedicina,Gestión de sistemas de salud,,,,,
+S10UC56,Electiva 3,Ver la previatura que corresponde a la electiva,,,,,
+S10UC57,Electiva 4,Ver la previatura que corresponde a la electiva,,,,,
+S10UC58,Proyecto final de titulación a nivel ingeniería,"Para presentar la propuesta del PFT I se requiere: Haber aprobado PFT T. Para presentar la defensa: Haber aprobado todas las UCs del primero al noveno semestre, excluyendo inglés. Haber aprobado la UC Telemedicina, y los 15 créditos de UCs Electivas. Para probar el PFT I: se rige el Reglamento de Trabajos de Titulación.",,,,,25
+S10UC59,Inglés 10,S9UC54,,,,,4
